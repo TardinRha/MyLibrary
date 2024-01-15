@@ -1,2 +1,20 @@
 # MyLibrary
-Aplicação web para salvar livros lidos e livros que quer ler (não lidos)
+
+Aplicação web desenvolvida para salvar livros lidos e livros que quer ler (não lidos).
+
+## Demonstração
+
+
+
+## Funcionalidades
+
+- Adicionar livro na lista
+- Editar livro
+- Deletar livro
+- Limpar lista
+
+## Tecnologias Utilizadas
+
+- JavaScript
+- HTML
+- CSS
