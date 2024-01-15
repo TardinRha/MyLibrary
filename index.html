@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>My Library</title>
+</head>
+<body>
+    <div class="title">My Library</div>
+    <div id="AddBook" class="div-formulario">
+        <form>
+            <label for="title">Title:</label>
+            <input type="text" id="title">
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+            <label for="pages">Pages:</label>
+            <input type="text" id="pages">
+            <label>
+                <input type="radio" name="status" value="Read" checked>
+                Read
+            </label>
+            <label>
+                <input type="radio" name="status" value="Not Read">
+                Not Read
+            </label>
+            <button id="addBook">Save</button>
+            <button id="clearBooks">Clean List</button>
+        </form>
+    </div>
+    <div id="listBooks" class="div-list-books">
+        <table>
+            <thead>
+                <tr>
+                    <th id="titleTable" class="title-table">Title</th>
+                    <th id="authorTable" class="author-table">Author</th>
+                    <th id="pagesTable" class="pages-table">Pages</th>
+                    <th id="statusTable" class="status-table">Status</th>
+                    <th id="editBook" class="edit-book">Edit</th>
+                </tr>
+            </thead>
+            <tbody id="bodyTable">
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>

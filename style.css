@@ -1,0 +1,97 @@
+body,a,header,textarea,p,h1,h2,h3,h4,h5,h6,div,li,ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color: bisque;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: unset;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    height: 5vh;
+    font-size: 50px;
+    font-family: unset;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.div-list-books{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+    background-color: brown;
+}
+
+.title-table{
+    width: 40%;
+}
+
+.author-table{
+    width: 20%;
+}
+
+.pages-table{
+    width: 5%;
+}
+
+.status-table{
+    width: 5%;
+}
+
+.edit-book{
+    width: 10%;
+}
+
+.div-edit{
+    position: relative;
+    background-color: #5b2525; /* Cor de fundo do balão */
+    color: #fff; /* Cor do texto dentro do balão */
+    padding: 10px;
+    margin-left: 20px; /* Espaçamento à esquerda para o ponto de cauda */
+    border-radius: 10px 10px 10px 0;
+}
+
+.div-edit::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Posição do ponto de cauda à esquerda */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #5b2525 transparent transparent transparent;
+}
