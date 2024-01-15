@@ -1,4 +1,5 @@
 let myLibrary = [];
+let editOpen = false;
 
 const buttonEnviar = document.getElementById("addBook");
 buttonEnviar.addEventListener("click", addBookToLibrary);
@@ -90,6 +91,10 @@ function deleteLine(index, bodyTable, linha){
 }
 
 function editLine(index, linha){
+    if(editOpen){
+        return;
+    }
+
     let divEdit = document.createElement("div");
     divEdit.id = "divEdit";
     divEdit.className = "div-edit";
@@ -162,6 +167,8 @@ function editLine(index, linha){
 
     divEdit.appendChild(formEdit);
     linha.appendChild(divEdit);
+
+    editOpen = true;
 }
 
 function saveEdit(index, inputTitle, inputAuthor, inputPages, inputLido, inputNaoLido){
@@ -170,6 +177,8 @@ function saveEdit(index, inputTitle, inputAuthor, inputPages, inputLido, inputNa
     myLibrary[index].pages = inputPages.value;
     myLibrary[index].statusRead = inputLido.checked ? inputLido.value : inputNaoLido.value;
     saveInLocalStorage();
+
+    editOpen = false;
 }
 
 const buttonDeleteLista = document.getElementById("clearBooks");
